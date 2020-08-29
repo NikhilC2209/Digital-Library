@@ -1,0 +1,7 @@
+<form action = "/books/find" method = "GET">
+    <input type = "text" name = "name" value = "<%= searchBar.name %>">
+    <button type = "submit">Search</button>
+</form><br>
+<% booksy.forEach(book => { %>
+    <div><%= book.Name %></div>
+<% }) %>     
